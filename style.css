@@ -24,12 +24,16 @@ div {
     width: 500px;
     height: 200px;
     margin: 0 auto 20px auto;
-    background-color: red;
+    background-color: rgb(170, 237, 245);
 }
 
-.input_answer {
+#input_answer {
     height: 100px;
+    width: 100px;
     margin-right: 50px;
+    padding: 0 20px;
+    font-size: 90px;
+    text-align: right;
 }
 .submit_answer {
     vertical-align: bottom;

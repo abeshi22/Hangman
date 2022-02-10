@@ -1,9 +1,9 @@
 
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
+let answer = 0;
 
 function drawRader(){
-    
     for(let i=0; i<100 ;i++){
         ctx.beginPath();
         ctx.rect(5*i+10,20,4,30);
@@ -17,5 +17,56 @@ function drawRader(){
     ctx.fillText("99",500,15);
 }
 
-drawRader();
+function setAnswer(){
+    answer = Math.floor(Math.random()*100);
+    console.log(answer);
+}
 
+// function pushNumber(){
+//     document.getElementById("input_answer").value = 0;
+// }
+
+function hint(){
+    document.getElementById("hint").innerText = "答えを設定しました。\n";
+}
+
+function push(val){
+        let temp = document.getElementById("input_answer").value;
+    if(val=="bs"){
+        if(temp.length==1){
+            document.getElementById("input_answer").value = "";
+        }else if(temp.length==2){
+            document.getElementById("input_answer").value = temp.substr(0,1);
+        }
+    }else if(temp.length>1){
+        alert("答えは0～99です")
+    }else{
+        document.getElementById("input_answer").value += val;
+    }
+}
+
+function guessNumber(){
+    if(document.getElementById("input_answer").value == ""){
+        alert("答えを入力してください");
+    }else if(isNaN(document.getElementById("input_answer").value)){
+        alert("答えには数字を入力してください");
+    }else{
+        var guess = Number(document.getElementById("input_answer").value);
+        
+    }
+    if(guess < answer){
+        document.getElementById("hint").innerText += ("答えは" + guess + "より大きいです。\n");
+    }else if(guess > answer){
+        document.getElementById("hint").innerText += ("答えは" + guess + "より小さいです。\n");
+    }else{
+        document.getElementById("hint").innerText += "正解です！！";
+    }
+}
+
+
+
+// メインの処理
+drawRader();
+setAnswer();
+// pushNumber();
+hint();
