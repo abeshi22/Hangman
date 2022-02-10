@@ -26,7 +26,6 @@ function drawRader(){
 // 答えの設定
 function setAnswer(){
     answer = Math.floor(Math.random()*100);
-    console.log(answer);
 }
 
 
