@@ -6,7 +6,7 @@ body {
 canvas {
     background: #eee;
     display:block;
-    margin: 30px auto;
+    margin: 30px auto 10px auto;
 }
 
 
@@ -19,12 +19,16 @@ h1 {
 div {
     text-align: center;
 }
+p {
+    margin: 5px auto;
+}
 
 #hint {
     width: 500px;
-    height: 200px;
+    height: 250px;
     margin: 0 auto 20px auto;
     background-color: rgb(170, 237, 245);
+    overflow-y: scroll;
 }
 
 #input_answer {
@@ -42,8 +46,9 @@ div {
 }
 
 .guess_number {
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     text-align: center  ;
+
     /* display: flex; */
 }
 .guess_number input {

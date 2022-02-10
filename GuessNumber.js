@@ -22,9 +22,6 @@ function setAnswer(){
     console.log(answer);
 }
 
-// function pushNumber(){
-//     document.getElementById("input_answer").value = 0;
-// }
 
 function hint(){
     document.getElementById("hint").innerText = "答えを設定しました。\n";
@@ -50,17 +47,22 @@ function guessNumber(){
         alert("答えを入力してください");
     }else if(isNaN(document.getElementById("input_answer").value)){
         alert("答えには数字を入力してください");
+        document.getElementById("input_answer").value = "";
     }else{
         var guess = Number(document.getElementById("input_answer").value);
-        
+        if(guess < answer){
+            document.getElementById("hint").innerText += ("答えは" + guess + "より大きいです。\n");
+            document.getElementById("input_answer").value = "";
+            document.getElementById("hint").scrollTo(0, document.getElementById("hint").scrollHeight);
+        }else if(guess > answer){
+            document.getElementById("hint").innerText += ("答えは" + guess + "より小さいです。\n");
+            document.getElementById("input_answer").value = "";
+            document.getElementById("hint").scrollTo(0, document.getElementById("hint").scrollHeight);
+        }else{
+            document.getElementById("hint").innerText += "正解です！！";
+        }
     }
-    if(guess < answer){
-        document.getElementById("hint").innerText += ("答えは" + guess + "より大きいです。\n");
-    }else if(guess > answer){
-        document.getElementById("hint").innerText += ("答えは" + guess + "より小さいです。\n");
-    }else{
-        document.getElementById("hint").innerText += "正解です！！";
-    }
+    
 }
 
 
