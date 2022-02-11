@@ -3,9 +3,7 @@ let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 let answer = 0;
 let rader = new Array(100);
-for (let i=0; i<100; i++){
-    rader[i] = true;
-}
+
 
 function drawRader(){
     for(let i=0; i<100 ;i++){
@@ -26,6 +24,9 @@ function drawRader(){
 // 答えの設定
 function setAnswer(){
     answer = Math.floor(Math.random()*100);
+    for (let i=0; i<100; i++){
+        rader[i] = true;
+    }
 }
 
 
@@ -80,9 +81,15 @@ function guessNumber(){
     
 }
 
+function reset(){
+    setAnswer();
+    drawRader();
+    hint();
+    document.getElementById("input_answer").value = "";
+}
 
 
 // メインの処理
-drawRader();
 setAnswer();
+drawRader();
 hint();
