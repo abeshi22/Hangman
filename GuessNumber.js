@@ -2,6 +2,7 @@
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 let answer = 0;
+let turn = 0;
 let rader = new Array(100);
 
 
@@ -24,6 +25,7 @@ function drawRader(){
 // 答えの設定
 function setAnswer(){
     answer = Math.floor(Math.random()*100);
+    turn = 0;
     for (let i=0; i<100; i++){
         rader[i] = true;
     }
@@ -60,6 +62,7 @@ function guessNumber(){
         document.getElementById("input_answer").value = "";
     }else{
         var guess = Number(document.getElementById("input_answer").value);
+        turn++;
         if(guess < answer){
             document.getElementById("hint").innerText += ("答えは" + guess + "より大きいです。\n");
             for(let i=0; i<=guess; i++){rader[i]=false;}
@@ -75,7 +78,7 @@ function guessNumber(){
             document.getElementById("input_answer").value = "";
             document.getElementById("hint").scrollTo(0, document.getElementById("hint").scrollHeight);
         }else{
-            document.getElementById("hint").innerText += "正解です！！";
+            document.getElementById("hint").innerText += ("あたり！" + turn + "回目で正解です！");
         }
     }
     
