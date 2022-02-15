@@ -79,6 +79,7 @@ function guessNumber(){
             document.getElementById("hint").scrollTo(0, document.getElementById("hint").scrollHeight);
         }else{
             document.getElementById("hint").innerText += ("あたり！" + turn + "回目で正解です！");
+            document.getElementById("hint").scrollTo(0, document.getElementById("hint").scrollHeight);
         }
     }
     
