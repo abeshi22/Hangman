@@ -59,7 +59,29 @@ function checkAnswer(val){
     if(checkCorrect()) {document.getElementById("hint1").innerText = "正解です！"}
     
     showStatus();
+    drawLife();
 }
+
+function drawLife(){
+    ctx.beginPath();
+    if(mistakeCount<4){
+        ctx.fillStyle = "blue";
+    }else if(mistakeCount<6){
+        ctx.fillStyle = "green";
+    }else if(mistakeCount<8){
+        ctx.fillStyle = "orange";
+    }else if(mistakeCount<10){
+        ctx.fillStyle = "purple";
+    }else{
+        ctx.fillStyle = "red";
+    }
+    ctx.arc(10,10,10,0,Math.PI*2);
+    ctx.fillRect(10,0,48*(mistakeCount),20);
+    ctx.arc(48*mistakeCount+10, 10, 10, 0, Math.PI*2);
+    ctx.fill();
+    ctx.closePath();
+}
+
 
 // 文字をすべて当てられたかチェック
 function checkCorrect(){
@@ -102,7 +124,6 @@ function reset(){
         document.getElementById("submit"+String.fromCharCode(i)).style.backgroundColor = "";
         document.getElementById("submit"+String.fromCharCode(i)).style.color = "";
         document.getElementById("submit"+String.fromCharCode(i)).style.borderColor = "";
-        
     }
     setAnswer();
     hint();
@@ -113,3 +134,4 @@ function reset(){
 // メインの処理
 setAnswer();
 hint();
+drawLife();
