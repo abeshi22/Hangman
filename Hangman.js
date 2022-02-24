@@ -7,12 +7,13 @@ let correct = [];  //解答状況フラグ
 let alphabet = "";          //未使用文字
 let mistakeCount = 0;       //誤答回数
 
-let answerWord = ["BOY", "CAT", "FOX", "HAT", "TEN", 
-                "BABY", "GIRL", "HEAT", "LION", "WOLF", 
-                "TIGER", "ZEBRA", 
-                "FATHER", "MOTHER", 
-                "PENGUIN", 
-                "ELEPHANT"
+let answerWord = ["ANT", "BAT", "BOX", "BOY", "CAT", "DAY", "DOG", "FOX", "HAT", "HOT", "JAM", "MAN", "RED", "SAD", "TEN", 
+                "BABY", "BEAR", "BEER", "BEST", "BLUE", "COOL", "DEER", "DESK", "FLAG", "GIRL", "HAND", "HAVE", "HEAT", "HOUR", "ITEM", "KING", "LION", "LOVE", "MEAT", "MISS", "NICE", "PINK", "WOLF", "YEAR", 
+                "BLACK", "BROWN", "CHAIR", "DRINK", "EARTH", "GREEN", "HUMAN", "JAPAN", "MOUSE", "ONION", "TIGER", "TOOTH", "WATCH", "WATER", "WHALE", "WHITE", "WOMAN", "WORST", "YACHT", "ZEBRA", 
+                "ANIMAL", "BETTER", "FATHER", "GUITAR", "HEALTH", "LETTER", "MINUTE", "MOTHER", "PARENT", "PURPLE", "RABBIT", "SECOND", "YELLOW",
+                "ELEMENT", "ENGLISH", "GORILLA", "ISLAND", "MONKEY", "PENGUIN", "RACCOON", 
+                "AIRPLANE", "ANTEATER", "ELEPHANT", "QUESTION", "ROTATION", "SANDWICH", "UMBRELLA", 
+                "AMBITIOUS", "DISCOVERY", "INTERVIEW", "JELLYFISH", "NEWSPAPER", "VEGETABLE"
                 ];
 
 
