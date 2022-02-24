@@ -56,8 +56,10 @@ function checkAnswer(val){
         document.getElementById("submit" + val).disabled = true;
     }
 
-    if(checkCorrect()) {document.getElementById("hint1").innerText = "正解です！"}
-    
+    if(checkCorrect()) {
+        document.getElementById("hint1").innerText = "正解です！"
+        submitDisabled();
+    }
     showStatus();
     drawLife();
 }
@@ -107,12 +109,20 @@ function showStatus(){
     if(mistakeCount==10){
         document.getElementById("hint1").innerText = "残念！正解は" + answer + "でした！";
         document.getElementById("hint2").innerText = answer;
+        submitDisabled();
     }
 }
 
 function giveup(){
     document.getElementById("hint1").innerText = "ギブアップ！正解は" + answer + "でした！";
     document.getElementById("hint2").innerText = answer;
+    submitDisabled();
+}
+
+function submitDisabled(){
+    for(let i="A".charCodeAt(0); i <= "Z".charCodeAt(0); i++){
+        document.getElementById("submit"+String.fromCharCode(i)).disabled = true;
+    }
 }
 
 function reset(){
