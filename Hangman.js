@@ -96,6 +96,13 @@ function reset(){
     mistakeCount = 0;
     document.getElementById("hint1").innerText = "";
     document.getElementById("hint2").innerText = "";
+    for(let i="A".charCodeAt(0); i <= "Z".charCodeAt(0); i++){
+        document.getElementById("submit"+String.fromCharCode(i)).disabled = false;
+        document.getElementById("submit"+String.fromCharCode(i)).style.backgroundColor = "";
+        document.getElementById("submit"+String.fromCharCode(i)).style.color = "";
+        document.getElementById("submit"+String.fromCharCode(i)).style.borderColor = "";
+        
+    }
     setAnswer();
     hint();
     showStatus();
