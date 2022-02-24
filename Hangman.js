@@ -125,6 +125,8 @@ function reset(){
         document.getElementById("submit"+String.fromCharCode(i)).style.color = "";
         document.getElementById("submit"+String.fromCharCode(i)).style.borderColor = "";
     }
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawLife();
     setAnswer();
     hint();
     showStatus();
