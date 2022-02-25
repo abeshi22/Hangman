@@ -7,13 +7,15 @@ let correct = [];  //解答状況フラグ
 let alphabet = "";          //未使用文字
 let mistakeCount = 0;       //誤答回数
 
-let answerWord = ["ANT", "BAT", "BOX", "BOY", "CAT", "DAY", "DOG", "FOX", "HAT", "HOT", "JAM", "MAN", "RED", "SAD", "TEN", 
-                "BABY", "BEAR", "BEER", "BEST", "BLUE", "COOL", "DEER", "DESK", "FLAG", "GIRL", "HAND", "HAVE", "HEAT", "HOUR", "ITEM", "KING", "LION", "LOVE", "MEAT", "MISS", "NICE", "PINK", "WOLF", "YEAR", 
-                "BLACK", "BROWN", "CHAIR", "DRINK", "EARTH", "GREEN", "HUMAN", "JAPAN", "MOUSE", "ONION", "TIGER", "TOOTH", "WATCH", "WATER", "WHALE", "WHITE", "WOMAN", "WORST", "YACHT", "ZEBRA", 
-                "ANIMAL", "BETTER", "FATHER", "GUITAR", "HEALTH", "LETTER", "MINUTE", "MOTHER", "PARENT", "PURPLE", "RABBIT", "SECOND", "YELLOW",
-                "ELEMENT", "ENGLISH", "GORILLA", "ISLAND", "MONKEY", "PENGUIN", "RACCOON", 
-                "AIRPLANE", "ANTEATER", "ELEPHANT", "QUESTION", "ROTATION", "SANDWICH", "UMBRELLA", 
-                "AMBITIOUS", "DISCOVERY", "INTERVIEW", "JELLYFISH", "NEWSPAPER", "VEGETABLE"
+let answerWord = ["ANT", "BAT", "BOX", "BOY", "CAT", "DAY", "DOG", "FOX", "HAT", "HOT", "JAM", "MAN", "MAY", "ONE", "RED", "SAD", "SIX", "TEN", "TWO",  
+                "BABY", "BEAR", "BEER", "BEST", "BLUE", "COOL", "DEER", "DESK", "FIVE", "FLAG", "FOUR", "GIRL", "HAND", "HAVE", "HEAT", "HOUR", 
+                "ITEM", "JULY", "JUNE", "KING", "LION", "LOVE", "MEAT", "MISS", "NICE", "NINE", "PINK", "SOME", "WOLF", "YEAR", 
+                "APRIL", "BLACK", "BROWN", "CHAIR", "DRINK", "EARTH", "EIGHT", "GREEN", "HUMAN", "JAPAN", "MARCH", "MOUSE", "ONION", "POINT", 
+                "SEVEN", "THREE", "TIGER", "TOOTH", "WATCH", "WATER", "WHALE", "WHITE", "WOMAN", "WORST", "YACHT", "ZEBRA", 
+                "ANIMAL", "AUGUST", "BETTER", "FATHER", "GUITAR", "HEALTH", "ISLAND", "LETTER", "MINUTE", "MONKEY", "MOTHER", "ORANGE", "PARENT", ,"POTATO", "PURPLE", "RABBIT", "SECOND", "SHOULD", "TOMATO", "YELLOW",
+                "ELEMENT", "ENGLISH", "GORILLA", "JANUARY", "OCTOBER", "PENGUIN", "RACCOON", 
+                "AIRPLANE", "ANTEATER", "DECEMBER", "ELEPHANT", "FEBRUARY", "NOVEMBER", "QUESTION", "ROTATION", "SANDWICH", "UMBRELLA", 
+                "AMBITIOUS", "DISCOVERY", "INTERVIEW", "JELLYFISH", "NEWSPAPER", "SEPTEMBER", "VEGETABLE"
                 ];
 
 
