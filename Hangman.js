@@ -63,7 +63,7 @@ function checkAnswer(val){
     }
 
     if(checkCorrect()) {
-        document.getElementById("hint1").innerText = "正解です！"
+        document.getElementById("hint1").innerText = "残りライフ" + (10-mistakeCount) + "で正解です！"
         submitDisabled();
     }
     showStatus();
