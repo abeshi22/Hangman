@@ -68,6 +68,7 @@ function checkAnswer(val){
     }
     showStatus();
     drawLife();
+    drawPicture();
 }
 
 function drawLife(){
@@ -148,8 +149,19 @@ function reset(){
     showStatus();
 }
 
+function drawPicture(){
+    let count = "";
+    if(mistakeCount<10) {
+        count = "0" + mistakeCount;
+    }else{
+        count = mistakeCount;
+    }
+    document.getElementById("picture").innerHTML = '<img src="image/hangman' + count + '.png" width="100">';
+}
+
 
 // メインの処理
 setAnswer();
 hint();
 drawLife();
+drawPicture();
