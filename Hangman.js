@@ -144,6 +144,7 @@ function reset(){
     }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawLife();
+    drawPicture();
     setAnswer();
     hint();
     showStatus();
@@ -156,7 +157,7 @@ function drawPicture(){
     }else{
         count = mistakeCount;
     }
-    document.getElementById("picture").innerHTML = '<img src="image/hangman' + count + '.png" width="100">';
+    document.getElementById("picture").innerHTML = '<img src="image/hangman' + count + '.png" width="200">';
 }
 
 

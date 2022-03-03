@@ -6,7 +6,7 @@ body {
 canvas {
     background: #eee;
     display:block;
-    margin: 30px auto 10px auto;
+    margin: 0 auto 10px auto;
     border-radius: 10px;
 }
 
@@ -33,7 +33,10 @@ p {
 }
 
 #picture {
-    margin: 50px 300px auto auto;
+    margin: 0px auto auto 200px;
+    padding: 0;
+    /* height: 76px; */
+    height: 152px;
 }
 
 #hint1 {
