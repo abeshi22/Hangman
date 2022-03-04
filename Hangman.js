@@ -9,7 +9,7 @@ let mistakeCount = 0;       //誤答回数
 
 let answerWord = ["ANT", "BAT", "BIG", "BOX", "BOY", "CAT", "DAY", "DOG", "EAT", "EYE", "FOX", "HAT", "HOT", "JAM", "MAN", "MAY", "ONE", "PAY", "RED", "SAD", "SIX", "TEN", "TWO",  
                 "BABY", "BEAR", "BEER", "BEST", "BLUE", "BOOK", "COOL", "DEER", "DESK", "FIND", "FISH", "FIVE", "FLAG", "FOUR", "GAME", "GIRL", "HAND", "HAVE", "HEAT", "HOUR", 
-                  "ITEM", "JULY", "JUNE", "KING", "KNOW", "LION", "LOVE", "MEAT", "MISS", "NEXT", "NICE", "NINE", "NOSE", "PART", "PINK", "RAIN", "SAME", "SOME", "TEST", "TIME", "WITH", "WOLF", "YEAR", 
+                  "ITEM", "JULY", "JUNE", "KING", "KNOW", "LION", "LOVE", "MEAT", "MISS", "NEXT", "NICE", "NINE", "NOSE", "PART", "PINK", "RAIN", "SAME", "SOME", "TEST", "TIME", "TRUE", "WITH", "WOLF", "YEAR", 
                 "AFTER", "AGAIN", "APRIL", "BLACK", "BROWN", "CHAIR", "CHILD", "COUNT", "DRINK", "EARTH", "EIGHT", "ENJOY", "FIRST", "GREEN", "HOUSE", "HUMAN", "JAPAN", "KNIFE", "LEMON", 
                   "MARCH", "MOUSE", "OFTEN", "ONION", "PLACE", "POINT", "SEVEN", "SNAKE", "SPACE", "SPEAK", "THIRD", "THREE", "TIGER", "TODAY", "TOOTH", 
                   "WATCH", "WATER", "WHALE", "WHITE", "WOMAN", "WORST", "WRITE", "YACHT", "ZEBRA", 
@@ -18,7 +18,7 @@ let answerWord = ["ANT", "BAT", "BIG", "BOX", "BOY", "CAT", "DAY", "DOG", "EAT",
                 "ALREADY", "BENEFIT", "CONTROL", "COUNTRY", "ELEMENT", "ENGLISH", "GORILLA", "JANUARY", "OCTOBER", "PENGUIN", "PLASTIC", "RACCOON", "RESERVE", 
                   "STATION", "STUDENT", "SUGGEST", "SUPPOSE", "TEACHER", "WITHOUT", 
                 "AIRPLANE", "ANNOUNCE", "ANTEATER", "CHILDREN", "COMPLETE", "DECEMBER", "ELEPHANT", "FEBRUARY", "LANGUAGE", "MUSICIAN", "NOVEMBER", 
-                  "POSSIBLE", "QUESTION", "ROTATION", "SANDWICH", "TOMORROW", "UMBRELLA", "WHATEVER", 
+                  "POSSIBLE", "QUESTION", "ROTATION", "SANDWICH", "TOMORROW", "UMBRELLA", "WHATEVER",
                 "AMBITIOUS", "BEAUTIFUL", "DISCOVERY", "EVERYBODY", "INTERVIEW", "JELLYFISH", "NEWSPAPER", "SEPTEMBER", "SOMETHING", "VEGETABLE", "YESTERDAY"
                 ];
 
