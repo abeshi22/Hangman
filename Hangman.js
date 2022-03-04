@@ -10,7 +10,7 @@ let mistakeCount = 0;       //誤答回数
 let answerWord = ["ANT", "BAT", "BIG", "BOX", "BOY", "CAT", "DAY", "DOG", "EAT", "EYE", "FOX", "HAT", "HOT", "JAM", "MAN", "MAY", "ONE", "PAY", "RED", "SAD", "SIX", "TEN", "TWO",  
                 "BABY", "BEAR", "BEER", "BEST", "BLUE", "BOOK", "COOL", "DEER", "DESK", "FIND", "FISH", "FIVE", "FLAG", "FOUR", "GAME", "GIRL", "HAND", "HAVE", "HEAT", "HOUR", 
                   "ITEM", "JULY", "JUNE", "KING", "KNOW", "LION", "LOVE", "MEAT", "MISS", "NEXT", "NICE", "NINE", "NOSE", "PART", "PINK", "RAIN", "SAME", "SOME", "TEST", "TIME", "TRUE", "WITH", "WOLF", "YEAR", 
-                "AFTER", "AGAIN", "APRIL", "BLACK", "BROWN", "CHAIR", "CHILD", "COUNT", "DRINK", "EARTH", "EIGHT", "ENJOY", "FIRST", "GREEN", "HOUSE", "HUMAN", "JAPAN", "KNIFE", "LEMON", 
+                "AFTER", "AGAIN", "APRIL", "BLACK", "BROWN", "CHAIR", "CHILD", "COUNT", "DRINK", "EARTH", "EIGHT", "ENJOY", "FALSE", "FIRST", "GREEN", "HOUSE", "HUMAN", "JAPAN", "KNIFE", "LEMON", 
                   "MARCH", "MOUSE", "OFTEN", "ONION", "PLACE", "POINT", "SEVEN", "SNAKE", "SPACE", "SPEAK", "THIRD", "THREE", "TIGER", "TODAY", "TOOTH", 
                   "WATCH", "WATER", "WHALE", "WHITE", "WOMAN", "WORST", "WRITE", "YACHT", "ZEBRA", 
                 "ADVISE", "AFRAID", "ANIMAL", "AUGUST", "BEFORE", "BETTER", "BREATH", "CAMERA", "CARROT", "EFFORT", "FATHER", "GUITAR", "HEALTH", "ISLAND", "LETTER", "LISTEN", 
